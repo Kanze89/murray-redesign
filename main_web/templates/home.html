@@ -3,16 +3,32 @@
 
 {% block content %}
 
-<div class="relative bg-slate-900 h-[650px] flex items-center justify-center text-center px-4 overflow-hidden">
-    <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
-    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80" 
-         class="absolute inset-0 w-full h-full object-cover z-0 grayscale opacity-40" alt="Mining Background">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<div class="relative h-[650px] flex items-center justify-center text-center px-4 overflow-hidden bg-slate-900">
+    
+    <div class="swiper mySwiper absolute inset-0 w-full h-full z-0">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="absolute inset-0 bg-black/60 z-10"></div> <img src="{% static 'img/s1.jpg' %}" class="w-full h-full object-cover" alt="Murray Mining Welding Team">
+            </div>
+            <div class="swiper-slide">
+                <div class="absolute inset-0 bg-black/60 z-10"></div>
+                <img src="{% static 'img/s2.jpg' %}" class="w-full h-full object-cover" alt="QA and Inspection">
+            </div>
+            <div class="swiper-slide">
+                <div class="absolute inset-0 bg-black/60 z-10"></div>
+                <img src="{% static 'img/s3.jpg' %}" class="w-full h-full object-cover" alt="Heavy Machinery Fabrication">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 
     <div class="relative z-20 max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg animate-fade-in-up">
             Engineering the <span class="text-green-500">Future</span> of Mongolia
         </h1>
-        <p class="text-lg text-gray-200 mb-8 font-light max-w-2xl mx-auto">
+        <p class="text-lg text-gray-200 mb-8 font-light max-w-2xl mx-auto drop-shadow-md">
             World-class Steel Fabrication, Engineering, and Mining Services delivered with precision and safety.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -84,5 +100,38 @@
         </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize the slider
+  var swiper = new Swiper(".mySwiper", {
+    effect: "fade",       // Smooth fade transition
+    loop: true,           // Infinite loop
+    speed: 1500,          // 1.5 second fade duration (slower is smoother)
+    autoplay: {
+      delay: 5000,        // Switch every 5 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+<style>
+    /* Custom Green Dots for the Slider */
+    .swiper-pagination-bullet {
+        background: white;
+        opacity: 0.5;
+        width: 12px;
+        height: 12px;
+    }
+    .swiper-pagination-bullet-active {
+        background: #16a34a !important; /* Murray Green */
+        opacity: 1;
+    }
+</style>
 
 {% endblock %}
