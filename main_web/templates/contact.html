@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto px-4 py-20">
+    <h1 class="text-4xl font-bold text-center text-slate-900 mb-8">Contact Murray Mining Services</h1>
+    
+    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+        <form action="#" method="POST" class="space-y-6">
+            {% csrf_token %}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+                    <input type="text" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-orange-500" placeholder="Your Name">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-2">Email Address</label>
+                    <input type="email" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-orange-500" placeholder="name@company.com">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">Subject</label>
+                <input type="text" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-orange-500" placeholder="Project Inquiry...">
+            </div>
+
+            <div>
+                <label class="block text-sm font-bold text-gray-700 mb-2">Message</label>
+                <textarea rows="5" class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-orange-500" placeholder="Tell us about your project requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded hover:bg-orange-600 transition duration-300">
+                Send Message
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
