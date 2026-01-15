@@ -5,37 +5,45 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<div class="relative h-[650px] flex items-center justify-center text-center px-4 overflow-hidden bg-slate-900">
+<div class="relative h-[550px] flex items-center justify-center text-center bg-slate-900">
     
     <div class="swiper mySwiper absolute inset-0 w-full h-full z-0">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="absolute inset-0 bg-black/60 z-10"></div> <img src="{% static 'img/s1.jpg' %}" class="w-full h-full object-cover" alt="Murray Mining Welding Team">
+        <div class="swiper-wrapper bg-black"> <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div> <img src="{% static 'img/s1.jpg' %}" 
+                     class="w-full h-full object-contain" 
+                     alt="Welding Team">
             </div>
-            <div class="swiper-slide">
-                <div class="absolute inset-0 bg-black/60 z-10"></div>
-                <img src="{% static 'img/s2.jpg' %}" class="w-full h-full object-cover" alt="QA and Inspection">
+
+            <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+                <img src="{% static 'img/s2.jpg' %}" 
+                     class="w-full h-full object-contain" 
+                     alt="QA Inspection">
             </div>
-            <div class="swiper-slide">
-                <div class="absolute inset-0 bg-black/60 z-10"></div>
-                <img src="{% static 'img/s3.jpg' %}" class="w-full h-full object-cover" alt="Heavy Machinery Fabrication">
+
+            <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+                <img src="{% static 'img/s3.jpg' %}" 
+                     class="w-full h-full object-contain" 
+                     alt="Heavy Machinery">
             </div>
+
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="relative z-20 max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-lg animate-fade-in-up">
-            Engineering the <span class="text-green-500">Future</span> of Mongolia
+    <div class="relative z-20 max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-xl bg-black/30 p-4 rounded-lg inline-block backdrop-blur-sm">
+            Engineering the <span class="text-green-500">Future</span>
         </h1>
-        <p class="text-lg text-gray-200 mb-8 font-light max-w-2xl mx-auto drop-shadow-md">
-            World-class Steel Fabrication, Engineering, and Mining Services delivered with precision and safety.
+        <p class="text-lg text-gray-100 mb-8 font-light max-w-2xl mx-auto drop-shadow-md bg-black/30 p-2 rounded backdrop-blur-sm">
+            World-class Steel Fabrication, Engineering, and Mining Services.
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#services" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded font-bold transition shadow-lg transform hover:-translate-y-1">
+            <a href="#services" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded font-bold transition shadow-lg">
                 Our Services
             </a>
-            <a href="{% url 'contact' %}" class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-4 rounded font-bold transition">
+            <a href="{% url 'contact' %}" class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded font-bold transition">
                 Get a Quote
             </a>
         </div>
@@ -43,23 +51,45 @@
 </div>
 
 <section class="bg-green-600 py-10 shadow-lg relative z-30">
-    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-        <div>
-            <div class="text-4xl font-extrabold">10+</div>
-            <div class="text-xs font-bold uppercase tracking-wider opacity-80">Years Experience</div>
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+        
+        <div class="p-4 transform hover:scale-105 transition duration-300">
+            <div class="text-3xl md:text-5xl font-extrabold mb-2">453,206</div>
+            <div class="text-sm font-bold uppercase tracking-widest opacity-90">Total Steel Fabrication (KG)</div>
         </div>
-        <div>
-            <div class="text-4xl font-extrabold">143k+</div>
-            <div class="text-xs font-bold uppercase tracking-wider opacity-80">Safe Hours</div>
+
+        <div class="p-4 transform hover:scale-105 transition duration-300 border-t md:border-t-0 md:border-l border-green-500/50">
+            <div class="text-3xl md:text-5xl font-extrabold mb-2">16</div>
+            <div class="text-sm font-bold uppercase tracking-widest opacity-90">Certified Engineers</div>
         </div>
-        <div>
-            <div class="text-4xl font-extrabold">100%</div>
-            <div class="text-xs font-bold uppercase tracking-wider opacity-80">Compliance</div>
+
+        <div class="p-4 transform hover:scale-105 transition duration-300 border-t md:border-t-0 md:border-l border-green-500/50">
+            <div class="text-3xl md:text-5xl font-extrabold mb-2">143,484</div>
+            <div class="text-sm font-bold uppercase tracking-widest opacity-90">Hours Without Incident</div>
         </div>
+
+    </div>
+</section>
+
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
         <div>
-            <div class="text-4xl font-extrabold">ISO</div>
-            <div class="text-xs font-bold uppercase tracking-wider opacity-80">Certified</div>
+            <div class="w-12 h-1 bg-green-600 mb-6"></div> <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                Welcome to <br>Murray Mining Services
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                We proudly implement international standards for steel fabrication, welding, electrical, sandblasting, painting manufacturing, engineering and third party QA control / non-destructive testing into the Mongolia mining sector.
+            </p>
+            <a href="{% url 'about' %}" class="inline-flex items-center justify-center px-8 py-3 bg-slate-900 text-white font-bold rounded hover:bg-green-600 transition duration-300 shadow-lg">
+                Read More <i class="fas fa-arrow-right ml-2"></i>
+            </a>
         </div>
+
+        <div class="relative">
+            <div class="absolute -inset-4 bg-green-100 rounded-xl transform rotate-2 z-0"></div> <img src="{% static 'img/s1.jpg' %}" alt="Welcome to Murray Mining" class="relative z-10 rounded-lg shadow-xl w-full h-[400px] object-cover">
+        </div>
+
     </div>
 </section>
 

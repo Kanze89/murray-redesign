@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-slate-900 py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-4xl font-bold text-white border-l-4 border-green-600 pl-4">Social Responsibility</h1>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        
+        <div class="md:col-span-1 space-y-2 h-fit sticky top-24">
+            <a href="{% url 'about' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                About Us <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'history' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                History <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'slogan' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                Slogan, Vision, Mission <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'social' %}" class="flex items-center justify-between px-4 py-3 bg-green-600 text-white font-bold rounded shadow-md border-l-4 border-green-800 transition transform hover:translate-x-1">
+                Social Responsibility <i class="fas fa-chevron-right text-sm"></i>
+            </a>
+            <a href="#" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                EXECUTIVES <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+        </div>
+
+        <div class="md:col-span-3 space-y-8">
+            
+            <div class="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg relative group">
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition duration-500"></div>
+                <img src="{% static 'img/vifwy.jpg' %}" alt="Murray Mining Social Responsibility Team" class="w-full h-full object-cover object-top">
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6 pb-2 border-b border-gray-200">НИЙГМИЙН ХАРИУЦЛАГЫН БОДЛОГО</h2>
+                <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                    Та бид энэ нийгмийн нэгж хэсэг бөгөөд цаашлаад байгууллага гэсэн нэрийн дор нэгдэж ашгийн төлөө үйл ажиллагаа явуулдаг. Бизнесийн үйл ажиллагаа эрхлэх замаар нийгмийн үйл явцад шууд болон шууд бус байдлаар нийгмээс тодорхой хэмжээгээр ашиг хүртэж байдаг. 
+                </p>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Тийм учраас Маррий майнинг сервисес ХХК нь <span class="font-bold text-green-600">Нийгэм</span> гэсэн ойлголтод хүрээлэн буй орчин, эрүүл мэнд, боловсрол, бизнесийн орчин зэргийг хамруулан ойлгож Нийгмийн хариуцлагаа хэрэгжүүлэхийг зорьдог. Ингэхдээ Монгол Услын хууль холбогдох хууль тогтоомжуудын хүрээнд хариуцлагатай, ёс зүйтэй, эрх тэгш байх бизнесийн зарчмуудыг баримтлан нийгмийн сайн сайхан, улс орны эдийн засгийн хөгжилд хувь нэмэрээ оруулахын төлөө ажилладаг.
+                </p>
+            </div>
+
+            <div class="flex flex-wrap gap-3 my-4">
+                <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full font-semibold text-sm">Байгаль орчин</span>
+                <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full font-semibold text-sm">Эрүүл мэнд</span>
+                <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full font-semibold text-sm">Боловсрол</span>
+                <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full font-semibold text-sm">Хөдөлмөрийн харилцаа</span>
+                <span class="px-4 py-2 bg-green-100 text-green-800 rounded-full font-semibold text-sm">Нийгмийн тэгш боломж</span>
+            </div>
+
+            <div class="bg-slate-50 p-8 rounded-2xl border border-gray-200 shadow-sm mt-8">
+                <h3 class="text-2xl font-bold text-slate-900 mb-8 text-center">Нийгмийн хариуцлагын хүрээнд хийгдэх ажлуудын хураангуй</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-heartbeat text-red-500 text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800">Эрүүл мэнд</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Эх нялхасын эрүүл мэндийн үндэсний төвд шаардлагатай тоног төхөөрөмж хандивлах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Түлэнхийн үндэсний төвийн барилгын ажилд өөрсдийн хийж чадах зүйлээр туслах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Ажилтнууддаа чиглэсэн эрүүл мэндийн хөтөлбөр хэрэгжүүлэх</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                         <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-hand-holding-heart text-blue-500 text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800">Бизнесийн ёс зүй</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Чанартай, үнэ цэнэ шингсэн бүтээгдэхүүн үйлчилгээ үзүүлэх</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Бизнесийн үйл ажиллагаанд шударга, ил тод, нээлттэй зарчим баримтлах</li>
+                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Хөгжлийн бэрхшээлтэй, тусгай хэрэгцээт иргэд болон ТББ-д дэмжлэг үзүүлэг, хамтран ажиллах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Өөрсдийн нөөц бололцоонд тулгуурлан нөү хау шингэсэн бүтээгдэхүүн үйлчилгээ үзүүлэх</li>
+                        </ul>
+                    </div>
+
+                     <div>
+                         <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-graduation-cap text-yellow-600 text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800">Боловсрол</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Мон Солонгосын коллежтой байгуулсан гэрээг чанаржуулах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Сургалтын танхим тохижуулж өгөх / Сургалтын багаж тоног төхөөрөмж авч өгөх</li>
+                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Дадлагжигч хөтөлбөрйиг сайжуурлах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Төгсөгчдийг ажлын байраар хангах</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                         <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-leaf text-green-600 text-lg"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-slate-800">Байгаль орчин</h4>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Хог хаягдлаа ангилан ялгадаг болох</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Өөрийн үйлдвэрийн хог хаягдлын менежментийг хэрэгжүүлж эхлэх /тоосжилт, хортой хог хаягдал, дуу чимээ/</li>
+                             <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Мод тарих ажлыг тогтмол зохион байгуулах</li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2"></i> Бүх нийтийн хөдөлгөөнд дуу хоолойгоо хүргэх, оролцоогоо нэмэгдүүлэх</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

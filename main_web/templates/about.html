@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-slate-900 py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-4xl font-bold text-white border-l-4 border-green-600 pl-4">About Us</h1>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        
+        <div class="md:col-span-1 space-y-2 h-fit sticky top-24">
+            <a href="{% url 'about' %}" class="flex items-center justify-between px-4 py-3 bg-green-600 text-white font-bold rounded shadow-md border-l-4 border-green-800 transition transform hover:translate-x-1">
+                About Us <i class="fas fa-chevron-right text-sm"></i>
+            </a>
+            <a href="{% url 'history' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                History <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'slogan' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                Slogan, Vision, Mission <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'social' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                Social Responsibility <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="#" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                EXECUTIVES <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+        </div>
+
+        <div class="md:col-span-3 space-y-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                
+                <div class="text-gray-700 text-lg leading-relaxed">
+                    <p class="mb-6">
+                        <span class="font-bold text-slate-900">Murray Mining Services LLC</span> is one of the largest independent full-line steel fabricators in Mongolia based in Ulaanbaatar city, invested by <span class="text-green-600 font-bold">Murray Engineering Pty Ltd</span>.
+                    </p>
+                    <p class="mb-6">
+                        We are within the <span class="text-green-600 font-bold">Byrnecut Group</span> in Australia.
+                    </p>
+                    <p>
+                        The Company has been developing Australian welding and Steel structure standards such as <strong>AS/NZS 1554.1:2014</strong> and <strong>AWS D14.1/D14.1M:2005</strong>, tied up with Mongolian MNS standards.
+                    </p>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-green-100 rounded-xl transform rotate-2 group-hover:rotate-1 transition"></div>
+                    <img src="{% static 'img/ab1.jpeg' %}" alt="Murray Mining Team" class="relative rounded-lg shadow-xl w-full h-auto object-cover border border-gray-200">
+                    <div class="absolute bottom-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded">
+                        Our Dedicated Team
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-gray-700 leading-relaxed space-y-6">
+                <hr class="border-gray-200">
+                
+                <p>
+                    We proudly implement international standards for steel fabrication, welding, electrical, sandblasting, painting manufacturing, engineering and third-party QA control / non-destructive testing into the Mongolia mining and infrastructure sector.
+                </p>
+
+                <p>
+                    We have professional mechanics, welders, and electricians trained to Australian standards. Our professional employees handle projects from design until the final product. We will manufacture tailor-made solutions for your specific requirements.
+                </p>
+
+                <div class="bg-slate-50 p-8 rounded-xl border border-gray-200 shadow-sm mt-8">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-100 p-3 rounded-full text-green-600 mt-1">
+                            <i class="fas fa-handshake text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Official Distribution Partners</h3>
+                            <p class="text-gray-600">
+                                In addition, we are official distributors of:
+                            </p>
+                            <div class="flex flex-wrap gap-2 mt-3">
+                                <span class="bg-white border px-3 py-1 rounded text-sm font-bold text-slate-700">MTG</span>
+                                <span class="bg-white border px-3 py-1 rounded text-sm font-bold text-slate-700">FUZE</span>
+                                <span class="bg-white border px-3 py-1 rounded text-sm font-bold text-slate-700">PlasCorp Pty Ltd</span>
+                                <span class="bg-white border px-3 py-1 rounded text-sm font-bold text-slate-700">Variant Mining</span>
+                                <span class="bg-white border px-3 py-1 rounded text-sm font-bold text-slate-700">TechMine Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
