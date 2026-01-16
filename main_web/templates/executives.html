@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-slate-900 py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-4xl font-bold text-white border-l-4 border-green-600 pl-4">Executives</h1>
+    </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+        
+        <div class="md:col-span-1 space-y-2 h-fit sticky top-24">
+            <a href="{% url 'about' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                About Us <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'history' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                History <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'slogan' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                Slogan, Vision, Mission <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'social' %}" class="flex items-center justify-between px-4 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded shadow-sm border border-gray-200 transition transform hover:translate-x-1">
+                Social Responsibility <i class="fas fa-chevron-right text-gray-400 text-sm"></i>
+            </a>
+            <a href="{% url 'executives' %}" class="flex items-center justify-between px-4 py-3 bg-green-600 text-white font-bold rounded shadow-md border-l-4 border-green-800 transition transform hover:translate-x-1">
+                EXECUTIVES <i class="fas fa-chevron-right text-sm"></i>
+            </a>
+        </div>
+
+        <div class="md:col-span-3 space-y-12">
+            
+            <h2 class="text-2xl font-bold text-slate-900 border-b border-gray-200 pb-2">Board of Directors & Executives</h2>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-slate-100 relative">
+                        <img src="{% static 'img/chairman.jpg' %}" alt="Peter Sullivan" class="w-full h-full object-cover min-h-[300px]">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-3xl font-bold text-slate-900 mb-1">Peter Sullivan</h3>
+                        <div class="text-green-600 font-bold text-sm uppercase tracking-wide mb-6">
+                            Chairman of the Board of Directors<br>
+                            Byrnecut Group Finance Director / Shareholder
+                        </div>
+                        <div class="text-gray-700 space-y-4 leading-relaxed">
+                            <p>
+                                Peter Sullivan (B.Comm) joined Byrnecut in January 2000 as Group Financial Controller and Company Secretary. Peter has overall accountability for the group's finance, payroll, accounts, supply, logistics, treasury, risk, information systems, and systems development.
+                            </p>
+                            <p>
+                                Prior to Byrnecut, Peter was a Regional Manager at RSM chartered accountants in the Kalgoorlie office, with a wide range of clients including primary producers, retail, mining, mining contracting, and Native Title.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-slate-100 relative">
+                        <img src="{% static 'img/ced.jpg' %}" alt="Baatar Uuganbayar" class="w-full h-full object-cover min-h-[300px]">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-3xl font-bold text-slate-900 mb-1">Baatar Uuganbayar</h3>
+                        <div class="text-green-600 font-bold text-sm uppercase tracking-wide mb-6">
+                            Chief Executive Director / Shareholder / Board Member
+                        </div>
+                        <div class="text-gray-700 space-y-4 leading-relaxed">
+                            <p>
+                                Baatar Uuganbayar brings a wealth of experience across the mining, industrial services, and steel fabrication sectors, having held a diverse range of technical, operational, and executive leadership roles in both Mongolia and abroad.
+                            </p>
+                            <p>
+                                As Chief Executive Director and Shareholder of Murray Mining Services, Baatar has been instrumental in positioning the company as one of Mongolia’s leading independent steel fabrication and engineering service providers.
+                            </p>
+                            <p>
+                                Baatar is deeply committed to creating long-term value in Mongolia’s heavy industry sector. He has played a pivotal role in forming strategic partnerships with global OEMs, while expanding the company’s capabilities in engineering innovation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-slate-100 relative">
+                        <img src="{% static 'img/coo.jpg' %}" alt="Jargalsaikhan Enkhbayar" class="w-full h-full object-cover min-h-[300px]">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-3xl font-bold text-slate-900 mb-1">Jargalsaikhan Enkhbayar</h3>
+                        <div class="text-green-600 font-bold text-sm uppercase tracking-wide mb-6">
+                            Chief Operating Officer (COO) / Board Member
+                        </div>
+                        <div class="text-gray-700 space-y-4 leading-relaxed">
+                            <p>
+                                As Chief Operating Officer of Murray Mining Services, Jargalsaikhan Enkhbayar is responsible for driving the company’s core operations, overseeing project delivery, and ensuring the efficient execution of engineering and fabrication activities across all divisions.
+                            </p>
+                            <p>
+                                With a strong foundation in mechanical engineering and over a decade of hands-on experience in the mining and heavy industrial sectors, Jargalsaikhan brings deep technical knowledge and operational expertise to the leadership team.
+                            </p>
+                            <p>
+                                Jargalsaikhan is recognized for his strategic mindset, process-driven leadership, and ability to build high-performing teams. He works closely with the CEO and department leaders to align operational goals with broader business objectives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-slate-100 relative">
+                        <img src="{% static 'img/ned.png' %}" alt="Amarjin Nemekhbayar" class="w-full h-full object-cover min-h-[300px]">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-3xl font-bold text-slate-900 mb-1">Amarjin Nemekhbayar</h3>
+                        <div class="text-green-600 font-bold text-sm uppercase tracking-wide mb-6">
+                            Non-Executive Director / Board Member
+                        </div>
+                        <div class="text-gray-700 space-y-4 leading-relaxed">
+                            <p>
+                                Mr. Amarjin Nemekhbayar serves as a respected Non-Executive Director at Murray Mining Services, bringing over a decade of experience in the private sector and a distinguished reputation as a public figure.
+                            </p>
+                            <p>
+                                Renowned for his credibility, strategic insight, and business acumen, Amarjin plays a key role in guiding the company’s external engagement and long-term growth strategy. His primary responsibilities include identifying and attracting investment opportunities, facilitating high-value contracts, and leveraging his extensive professional network to support the company’s expansion.
+                            </p>
+                            <p>
+                                With a proven track record in fostering sustainable partnerships and promoting strong business ethics, Mr. Amarjin contributes both integrity and influence to the boardroom. His contributions are vital to ensuring Murray Mining Services remains a trusted and forward-thinking player in the Mongolian industrial sector.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

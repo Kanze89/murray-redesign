@@ -17,3 +17,6 @@ def slogan(request):
 
 def social(request):
     return render(request, 'social.html')
+
+def executives(request):
+    return render(request, 'executives.html')
