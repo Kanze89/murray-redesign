@@ -35,22 +35,52 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="relative z-20 w-full max-w-4xl px-4">
-        <div class="bg-slate-900/70 backdrop-blur-sm border border-white/10 p-6 md:p-12 rounded-2xl shadow-2xl text-center">
+    <div class="relative h-[550px] md:h-[650px] flex items-center justify-center bg-slate-900 overflow-hidden">
+    
+    <div class="swiper mySwiper absolute inset-0 w-full h-full z-0">
+        <div class="swiper-wrapper bg-black">
             
-            <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 md:mb-6 tracking-tight">
+            <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/50 z-10"></div> <img src="{% static 'img/s1.jpg' %}" 
+                     class="w-full h-full object-cover md:object-contain object-center" 
+                     alt="Welding Team">
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/50 z-10"></div>
+                <img src="{% static 'img/s2.jpg' %}" 
+                     class="w-full h-full object-cover md:object-contain object-center" 
+                     alt="QA Inspection">
+            </div>
+
+            <div class="swiper-slide flex items-center justify-center">
+                <div class="absolute inset-0 bg-black/50 z-10"></div>
+                <img src="{% static 'img/s3.jpg' %}" 
+                     class="w-full h-full object-cover md:object-contain object-center" 
+                     alt="Heavy Machinery">
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="relative z-20 w-full max-w-4xl px-4 mt-8 md:mt-0">
+        
+        <div class="bg-slate-900/60 backdrop-blur-md border border-white/20 p-6 md:p-12 rounded-2xl shadow-2xl text-center">
+            
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-4 md:mb-6 tracking-tight drop-shadow-lg">
                 Engineering the <span class="text-green-500">Future</span>
             </h1>
             
-            <p class="text-base md:text-xl text-gray-200 mb-6 md:mb-8 font-light leading-relaxed max-w-2xl mx-auto">
+            <p class="text-base md:text-xl text-gray-100 mb-6 md:mb-8 font-light leading-relaxed max-w-2xl mx-auto drop-shadow-md">
                 World-class Steel Fabrication, Engineering, and Mining Services.
             </p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-lg font-bold transition shadow-lg">
+                <a href="#services" class="bg-green-600 hover:bg-green-500 text-white px-8 py-3 rounded-lg font-bold transition shadow-lg w-full sm:w-auto">
                     View Services
                 </a>
-                <a href="{% url 'contact' %}" class="bg-transparent border-2 border-white/80 hover:bg-white hover:text-slate-900 text-white px-8 py-3 rounded-lg font-bold transition">
+                <a href="{% url 'contact' %}" class="bg-transparent border-2 border-white/80 hover:bg-white hover:text-slate-900 text-white px-8 py-3 rounded-lg font-bold transition w-full sm:w-auto">
                     Get a Quote
                 </a>
             </div>
@@ -58,6 +88,7 @@
         </div>
     </div>
 
+</div>
 </div>
     <div class="relative z-20 max-w-4xl mx-auto px-4">
         <h1 class="text-3xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-xl bg-black/30 p-4 rounded-lg inline-block backdrop-blur-sm">
